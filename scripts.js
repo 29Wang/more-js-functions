@@ -4,7 +4,13 @@ function addToPage(string){
 }
 
 // let's write a function that accepts two arguments then adds them together. If the arguments aren't both numbers, concatenate that with the other argument and a space between the args, otherwise perform addition
-// TO DO
+function addTheValues(param1,param2){
+    if(isNaN(param1) || isNaN(param2)){
+
+    }else{
+
+    }
+}
 
 // call the function a few times with different parameters
 // TO DO
