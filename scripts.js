@@ -27,24 +27,33 @@ function scopeExample(){
 
 // do functions execute when you don't call them?
 // TO DO
-scopeExample();
+//scopeExample();
 // this won't work because this variable does not exist outside of the scopeExample function
 // try to access that local variable from the previous function
 // TO DO
-addToPage(localVariable);
+//addToPage(localVariable);
 
 // let's create a global score variable
-// TO DO
+let score = 0;
+
 
 // now let's write a function that will add two to the current score each time it's called
-// TO DO
+function scoreBasket(){
+    return score += 2;
+}
 
 // we could also have a function for a three-pointer
-// TO DO
+function scoreThree(){
+    return score +=3;
+}
 
 // now let's call that a couple of times, then write the current score to the page
-// TO DO
-
+addToPage("the current score:" + score);
+scoreBasket();
+scoreBasket();
+addToPage("score after two baskets:" + score);
+scoreThree();
+addToPage("score after a three-point:" + score);
 // don't forget, you can call a function that returns a value and assign that returned value to a variable
 // this function will double the parameter's value and return it
 // TO DO
